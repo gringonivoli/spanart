@@ -1,0 +1,6 @@
+# Encender el motor de reescritura de las URL
+RewriteEngine On
+# Crear una regla que dirija a todas las peticiones  (excepto las realizadas al directorio static) 
+# hacia el app_ignition.php
+RewriteRule !(^static) app_ignition.php
+Options -Indexes
